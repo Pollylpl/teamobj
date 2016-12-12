@@ -1,0 +1,1 @@
+window.addEventListener("load",function(){var e=document.forms[0];e.addEventListener("submit",function(t){t.preventDefault();var a=e.userName.value,n=e.pwd.value,r=JSON.parse(localStorage.getItem(a));if(r&&r.pwd===n)return location.href="me.html"})});

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>影院</title>
+   <link rel="stylesheet" type="text/css" href="../dist/css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../dist/css/place.css">
+    <script src="../dist/js/zepto.js"></script>
+    <script src="../dist/js/template.js"></script>
+    <script src="../dist/js/place.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+
+          <div class="header-top ">
+          <a href="javascript:history.go(-1);location.reload()"> <i class="iconfont">&#xe60d;</i></a><!-- 你的名字 -->
+          </div>
+
+        </header>
+        <section>
+            <span class="date">今天<br>12月9日</span>
+            <ul id="content" >
+                <li>
+                    <p>星美国际影城-北京回龙观店35元起 <span class="right bg">8.5</span></p>
+                    <span><i class="iconfont">&#xe64e;</i>北京昌平区回龙观西大街111号华联商场3层</span>
+                    <span><i class="iconfont">&#xe60e;</i>北京近期场次:|12:35</span>
+                </li>
+            </ul>
+
+        </section>
+    </div>
+     <script id="placeall" type="text/html">
+          {{each list as value i}}
+            <li>
+                <a href="movieshow.html?">
+                <p>星美国际影城-{{value['branch']}} <span class="right bg">{{value['score']}}</span></p>
+                <span><i class="iconfont">&#xe64e;</i>{{value['branch_info']}}</span>
+                <span><i class="iconfont">&#xe60e;</i>北京近期场次:{{value['time']}}</span>
+                 </a>
+            </li>
+        {{/each}}
+    </script>
+
+</body>
+</html>

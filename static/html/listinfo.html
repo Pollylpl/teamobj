@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>电影详情</title>
+	<!-- <link rel="stylesheet" href="//at.alicdn.com/t/font_pb9soer0ztgctyb9.css"> -->
+	<link rel="stylesheet" href="../dist/css/listinfo.css">
+	<link rel="stylesheet" type="text/css" href="../dist/css/iconfont.css">
+	<script src="../dist/js/zepto.js"></script>
+	<script src="../dist/js/template.js"></script>
+	<script src="../dist/js/touch.js"></script>
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<div class="header-top iconfont">
+			<a href="javascript:history.go(-1);location.reload()"><i class="iconfont cow">&#xe60d;</i></a>
+			</div>
+			<div class="header-btm" id="header-btm">
+			</div>
+		</header>
+		<section class="sec1" id="sec1">
+
+			<script  id="movie_intro" type="text/html" >
+				{{each list as value i}}
+				<div class="buyp">
+					<a href="place.html?{{value['movie_id']}}">选座购票</a>
+				</div>
+				<div class="detail">
+					<p>导演：<span>{{value['movie_dao']}}</span></p>
+					<p>主演：<span>{{value['movie_part']}}</span></p>
+					<p class="summary" id="fold">剧情:<span>{{value['movie_des']}}</span></p>
+					<i class="iconfont icon-xiangxia" id="abc"></i>
+				</div>
+				{{/each}}
+			</script>
+
+		</section>
+		<section>
+			<div class="pics">
+				<h2>预告片/剧照</h2>
+				<ul id="imgs_ul">
+
+					<script id="photos" type="text/html">
+						{{each list as value i}}
+						<li><img src="{{value}}" alt="" />
+						</li>
+						{{/each}}
+					</script>
+				</ul>
+			</div>
+		</section>
+	</div>
+	<script id="movie_info" type="text/html">
+	{{each list as value i}}
+		<div class="img-wrap">
+			<img src="{{value['movie_url']}}" alt="imgs">
+		</div>
+		<ul class="info">
+			<li>{{value['movie_name']}}</li>
+			<li><i class="iconfont" style="color:#ee9211;">&#xe60c;</i>{{value['movie_score']}}</li>
+			<li>{{value['movie_type']}}</li>
+			<li>片长：{{value['movie_time']}}分钟</li>
+			<li>上映：{{value['movie_date']}}</li>
+		</ul>
+	{{/each}}
+	</script>
+	<script src="../dist/js/listinfo.js"></script>
+
+</body>
+</html>

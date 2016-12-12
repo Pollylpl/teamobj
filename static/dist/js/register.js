@@ -1,0 +1,1 @@
+window.addEventListener("load",function(){var e=document.forms[0],t=function(){for(var t={},n=0,r=e.elements.length;n<r;n++){var a=e.elements[n];/text|password/.test(a.type)&&(t[a.name]=a.value)}return t};e.addEventListener("submit",function(e){e.preventDefault();var n=t();localStorage.setItem(n.userName,JSON.stringify(n)),location.href="login.html"})});

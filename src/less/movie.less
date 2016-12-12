@@ -1,0 +1,131 @@
+
+@import 'public.less';
+
+
+@color:#e76a00;
+// 头部
+
+
+
+header{
+    position:fixed;
+    top:0px;
+    width:100%;
+    z-index:2;
+}
+.header{
+    display: flex;
+    background:@color;
+    color:#fff;
+    font-size:1.7rem;
+    padding:10px;
+}
+.header a{
+    color:#fff;
+}
+.header-left,.header-right{
+    flex:1;
+}
+.header-left{
+    margin-left:10px;
+}
+.header-center{
+     flex:4;
+}
+.down{
+    font-size:1.3rem;
+}
+// 选项卡
+.tab{
+    display:flex;
+    font-size:1.7rem;
+    text-align:center;
+    background:#fff;
+}
+.tab li{
+    flex:1;
+    list-style: none;
+    padding:10px;
+}
+//边框颜色
+.mvpaly{
+    color:@color;
+    border-bottom: 2px solid @color;
+}
+//正在热映
+.nowing,.future{
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background:#fff;
+    margin-top:81px;
+    margin-bottom:49px;
+}
+.nowing li,.future li{
+    display:flex;
+    width:94%;
+    margin:0 auto;
+    padding:20px 0 15px 0;
+    font-size:1.8rem;
+    font-family:microsoft yahei;
+    border-top:1px solid #e5e5e5;
+}
+.nowing li:first-child,.future li:first-child{
+    border-top:none;
+}
+.nowing li .img,.future li .img{
+    float:left;
+    width:87px;
+}
+.nowing img,.future img{
+    width:69px;
+    height:104px;
+    flex:1;
+}
+.movie-content{
+    float:left;
+    flex:4;
+}
+.movie-content h1{
+    font-size:1.3rem;
+}
+.des{
+    font-size:1.2rem;
+    color:#727272;
+    padding:5px 0 5px 0;
+    font-size:1.2rem;
+    margin-top:5px;
+    width:140px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+
+}
+.buy span{
+    display: block;
+    width:56px;
+    height:28px;
+    border:1px solid @color;
+    line-height: 28px;
+    text-align:center;
+    border-radius: 5px;
+    font-size:1.2rem;
+    color:@color;
+    float:right;
+    margin-top:34px;
+}
+.grade{
+    display:inline;
+    width:90px;
+    margin-right:5px;
+    float:left;
+    color:#ee9211;
+
+}
+.score{
+    display:block;
+    float:left;
+    color:#727272;
+    font-size:1.3rem;
+}

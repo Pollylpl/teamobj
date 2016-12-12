@@ -1,0 +1,39 @@
+*{ margin: 0; padding: 0;}
+ul,li,ol{list-style:none;}
+a{text-decoration: none; color:#555555}
+img{border:none;}
+html{ font-size: 62.5%; font-family:"微软雅黑"; }
+.clearfix:after{
+    content:'';
+    width: 100%;
+    clear: both;
+
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    .footer-ul{
+        width: 100%;
+        height: auto;
+        background: #ffffff;
+        display:flex;
+        li{
+            flex:1;
+            text-align: center;
+            box-sizing: border-box;
+            padding: 10px 0;
+            color:#555555;
+            .active i,.active a{
+                color:#ff6913;
+            }
+            p{
+                padding-top:2px;
+                font-size: 1rem;
+            }
+        }
+    }
+}

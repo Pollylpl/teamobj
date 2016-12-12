@@ -1,0 +1,215 @@
+
+@import 'public.less';
+
+/* *{ margin: 0; padding: 0;}
+ul,li,ol{list-style:none;}
+a{text-decoration: none; color:#555555}
+
+html{ font-size: 62.5%; font-family:"微软雅黑"; }
+.clearfix:after{
+    content:'';
+    width: 100%;
+    clear: both;
+    display: block;
+} */
+//头部
+.header-top{
+    width: 100%;
+    display:flex;
+    text-align:center;
+    padding: 10px 5px 10px;
+}
+.logo{
+    width:85%;
+    img{
+        width: 104px;
+        height: 25px;
+    }
+}
+
+.search{
+    width: 15%;
+    padding-top:5px;
+    i{
+        font-size:2rem;
+        color:#64646f;
+    }
+}
+
+
+//轮播
+.swiper-container{
+    width:100%;
+    img{
+        width: 100%;
+    }
+}
+
+.body{
+    width: 100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    text-align: center;
+    li{
+        width:25%;
+        box-sizing:border-box;
+        padding: 10px 5px 5px;
+        span{
+            display: inline-block;
+            border-radius: 100%;
+            padding: 4px 12px 6px;
+            text-align:center;
+        }
+        .sp1{
+            background:#ff6913;
+            font-weight: 700;
+        }
+        .sp2{
+            background:#ad45c0;
+            font-weight: 900;
+        }
+        .sp3{
+            background:#7ea4fe;
+            font-weight: 900;
+        }
+        .sp4{
+            background:#01a9f4;
+        }
+        .sp5{
+            background:#1fe8b5;
+            font-weight: 900;
+        }
+        .sp6{
+            background:#6763f9;
+        }
+        .sp7{
+            background:#ff3d01;
+        }
+        .sp8{
+            background:#ffab19;
+        }
+        i{
+            font-size:3rem;
+            color:#fff;
+        }
+        p{
+            font-size:1.5rem;
+            color:#555555;
+            padding: 5px;
+        }
+    }
+
+}
+
+.main_floor{
+    width: 100%;
+    background:#f0f0f0;
+    overflow:hidden;
+    .h3{
+        margin: 12px 10px 10px;
+        font-size:1.5rem;
+        margin-bottom: 10px;
+        line-height: 1.5rem;
+        border:0;
+        padding-left:5px;
+        border-left: 0.3rem solid #ed5564;
+        font-weight:normal;
+    }
+    .mv{
+        padding: 10px 0;
+        overflow: hidden;
+        display: flex;
+        width: 100%;
+        flex-wrap:wrap;
+        justify-content:space-around;
+        ul{
+            padding:0 10px;
+            box-sizing: border-box;
+            width: 50%;
+            overflow:hidden;
+        }
+
+        ul:nth-child(odd){
+            padding-right:5px;
+        }
+        ul:nth-child(even){
+
+            padding-left:5px;
+        }
+    }
+
+    .fl{
+        padding: 10px 10px;
+        overflow: hidden;
+        h3{
+            font-size:1.5rem;
+            margin-bottom: 10px;
+            line-height: 1.5rem;
+            border:0;
+            padding-left:5px;
+            border-left: 0.3rem solid #ed5564;
+            font-weight:normal;
+        }
+        ul{
+            display: flex;
+            width: 100%;
+            flex-wrap:wrap;
+            justify-content:space-around;
+            overflow:hidden;
+            li{
+                box-sizing: border-box;
+                width: 50%;
+                padding-left: 5px;
+                overflow:hidden;
+
+            }
+        }
+        .pad_r{
+            padding-left:0;
+            padding-right:5px;
+        }
+    }
+    img{
+            width: 100%;
+            display: block;
+        }
+        p{
+            font-weight:700;
+            font-size:1.4rem;
+            color:#333;
+            background:#ffffff;
+            padding: 3px 0 5px 0;
+            width:100%;
+            white-space:nowrap;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            text-indent: 3px;
+        }
+        .c_red{
+            color:#f33;
+            font-weight:normal;
+            margin-bottom:10px;
+        }
+}
+
+.back{
+    width:3.5rem;
+    height:3.5rem;
+    background:#ffffff;
+    opacity: .8;
+    border-radius:100%;
+    position: absolute;
+    right:1rem;
+    bottom:6rem;
+    color: red;
+    text-align:center;
+    box-sizing: border-box;
+    display:none;
+    .fa{
+        font-size:2.5rem;
+        color:#555555;
+        display: inline-block;
+    }
+}
+

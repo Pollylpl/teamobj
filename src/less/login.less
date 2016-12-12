@@ -1,0 +1,77 @@
+@import 'public.less';
+
+
+@color:#e76a00;
+html{
+    font-size: 62.5%;
+    font-family:'微软雅黑';
+ }
+header{
+    position:fixed;
+    top:0px;
+    width:100%;
+    z-index:2;
+}
+.header{
+    display: flex;
+    font-size:1.7rem;
+    padding:10px;
+    border-bottom:1px solid #d9d9d9;
+}
+.header a{
+    color:#000;
+}
+.header-left,.header-right{
+    flex:1;
+}
+.header-left{
+    margin-left:10px;
+}
+.header-left .iconfont{
+    font-size:2rem;
+}
+.header-center{
+    font-size:1.8rem;
+     flex:4;
+     text-align:center;
+}
+.header-right{
+    text-align:right;
+    padding-top:7px;
+}
+.header-right a{
+    color:@color;
+    font-size:1.6rem;
+}
+
+
+section{
+    margin-top:84px;
+}
+.form{
+    margin:50px auto;
+    width: 100%;
+    height: 100%;
+    padding-left:20px;
+    padding-top:10px;
+}
+.form label{
+    margin-right:10px;
+}
+.form input{
+    display:inline-block;
+    width: 70%;
+    height: 30px;
+    line-height:30px;
+    border:0;
+    border-bottom:1px solid #dddddd;
+    outline:none;
+}
+.form .reg{
+    margin-top:30px;
+    width: 60%;
+    margin-left:14%;
+    background: #eeeeee;
+    border:0;
+    color:#888888;
+}

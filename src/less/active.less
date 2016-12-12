@@ -1,0 +1,77 @@
+@import 'public.less';
+
+section{
+    position:relative;
+}
+.show{
+    img{
+        width: 100%;
+        display: block;
+    }
+
+}
+.news{
+    display:flex;
+    overflow:hidden;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    padding:10px 0;
+    background-color: #fff;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.1);
+    margin-bottom: 1.3rem;
+    position: relative;
+    .news_l{
+        width: 21%;
+        box-sizing:border-box;
+        font-size:18px;
+        p{
+            text-align: center;
+            color: #999;
+            font-weight:normal;
+        }
+    }
+    .news_r{
+        box-sizing:border-box;
+        font-size:2rem;
+        border-left: 1px solid #ccc;
+        width: 79%;
+        p{
+            font-size:2rem;
+            margin-left: 1rem;
+            color: #393939;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        span{
+            font-size:1.5rem;
+            margin-left: 1rem;
+            color: #585858;
+            margin-top: .4rem;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .go{
+            position: absolute;
+            top:0;
+            right: 0;
+            background: url('../img/icon_e.png') no-repeat 0 0;
+            z-index: 10;
+            overflow: hidden;
+            background-size: 100% auto;
+            width:18%;
+            height:75%;
+            p{
+                font-size:1rem;
+                color:#ffffff;
+                -webkit-transform: rotate(38deg);
+                transform: rotate(38deg);
+                position: absolute;
+                right: -0.2rem;
+                top: 1rem;
+            }
+        }
+    }
+}
+

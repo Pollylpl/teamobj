@@ -1,0 +1,326 @@
+@import "public";
+@col72:#727272;
+@fl:left;
+@ff7200:#ff7200;
+
+
+header{
+        padding: 10px 0;
+        text-align: center;
+        display: flex;
+        overflow:hidden;
+        flex-wrap:wrap;
+        justify-content:space-around;
+        color:#ffffff;
+        background: #e76a00;
+    .a_back{
+        width: 7%;
+        color:#ffffff;
+        box-sizing:border-box;
+    }
+    h3{
+        width: 93%;
+        font-size: 1.6rem;
+        font-weight: normal;
+        font-family: "宋体";
+    }
+
+}
+
+section{
+    width:100%;
+    height:100%;
+}
+
+
+.m_box{
+    width: 100%;
+    height: 42px;
+    background-color: #f3f3f3;
+}
+.info{
+    font-size:14px;
+    width:38%;
+    margin:0 0 0 25%;
+    line-height: 42px;
+    color:#fa7336;
+    float:@fl;
+}
+.time{
+    width:30%;
+    line-height:42px;
+    font-size:14px;
+    color:#fa7336;
+    float:@fl;
+}
+/*film-info*/
+.order_info_msg{
+    width:99%;
+    margin:0 auto;
+    border-bottom: 1px solid #d9d9d9;
+    .box{
+        width:96%;
+        margin:20px 0 20px 2%;
+        display: inline-block;
+        .ord-item{
+            width:98%;
+            margin:0 auto;
+            height:36px;
+            line-height:43px;
+            font-size:16px;
+            color:@col72;
+            border:none;
+            .film_name{
+                font-size:18px;
+                padding:0 5px;
+                line-height:28px;
+                color:#414141;
+                float:@fl;
+                .fa{
+                    color:@ff7200;
+                }
+            }
+            .language{
+                font-size:14px;
+                line-height:30px;
+                color:@col72;
+                text-indent: 19px;
+                float:@fl;
+            }
+        }
+        .ord-mar{
+            font-size:13px;
+            width:96%;
+            margin:0 auto;
+            height:36px;
+            line-height:42px;
+            color:@col72;
+
+        }
+
+    }
+}
+/*mobile*/
+.mobile_info{
+    height:120px;
+    max-width: 640px;
+    margin:0 auto;
+    border-bottom:1px solid #dedede;
+    .tit{
+        width:92%;
+        min-height: 32px;
+        line-height:32px;
+        font-size:14px;
+        color:@col72;
+        padding:10px 0;
+        display: block;
+        margin:0 auto;
+        .fa{
+            font-size:2rem;
+            color:@ff7200;
+        }
+
+    }
+    .mobile_edit{
+        width:100%;
+        height:40px;
+        margin:5px 0;
+        .mobile{
+            width:88%;
+            margin:0 0 0 4%;
+            height:36px;
+            line-height:36px;
+            border-radius: 3px;
+            border:1px solid #bbb7b7;
+            box-shadow:0 0 5px #dedede;
+            .inputBox{
+                width:300px;
+                height:36px;
+                line-height:36px;
+                margin:0 0 0 18px;
+                overflow:hidden;
+                font-size:14px;
+                float:@fl;
+                .inputBox-input{
+                    border:none;
+                    display: inline-block;
+                    outline: none;
+
+                }
+            }
+            .mobile_ico{
+                width:36px;
+                height:36px;
+                position:absolute;
+                right:7%;
+            }
+        }
+    }
+
+}
+/*mycoupon*/
+.coupon-box{
+    max-width:640px;
+    line-height:80px;
+    font-size:16px;
+    border-bottom:1px solid #d9d9d9;
+    .content{
+        width:96%;
+        height:50px;
+        line-height:50px;
+        padding:0;
+        margin:0 auto;
+        .tit{
+            font-size:1.5rem;
+            padding:0 5px;
+            .fa{
+
+                color:@ff7200;
+            }
+        }
+        .use{
+            font-size: 12px;
+            float: right;
+            margin-right:8px;
+            color:#999999;
+            .fa{
+                font-size:12px;
+            }
+        }
+
+    }
+
+}
+/*费用明细*/
+.order_cosr_info{
+    min-width: 320px;
+    max-width:640px;
+    min-height:150px;
+    margin:0 auto;
+    border-bottom:1px solid #d9d9d9;
+    .top_item{
+        width:92%;
+        margin-left:4%;
+        height:40px;
+        line-height:40px;
+        font-size:18px;
+    }
+
+    .item{
+        margin-left:10px;
+        width:92%;
+        margin:0 auto;
+        min-height:108px;
+        padding:0;
+        .info_text{
+            float:@fl;
+            width:30%;
+            height:60px;
+            line-height:28px;
+            font-size:16px;
+            color:@col72;
+            font-weight:400;
+            letter-spacing: 3px;
+        }
+        .if_batdop{
+            height:60px;
+            width:70%;
+            float:@fl;
+            .lia{
+                width:78%;
+                height:38px;
+                .count_price{
+                    height:26px;
+                    line-height:26px;
+                    color:#ff5991;
+                    float:@fl;
+                    font-size:18px;
+                }
+            }
+            .lib{
+                font-size:16px;
+                color:#b7b7b7;
+            }
+        }
+    }
+}
+
+/*footer*/
+.footer_btn{
+    .jumpBtn{
+        width:88%;
+        height: 50px;
+        line-height:50px;
+        font-size:16px;
+        border-radius:3px;
+        background-color:#fdaa32;
+        margin:10% 0 5% 5%;
+        .m_text{
+            font-size:21px;
+            color:#fedca6;
+            margin-left:20%;
+            float:@fl;
+        }
+        .price{
+            font-size:21px;
+            color:#ffffff;
+            float:@fl;
+        }
+    }
+}
+/*弹窗*/
+.disnone{
+    display: none;
+}
+.popup{
+    width:250px;
+    max-width:100%;
+    max-height: 90%;
+    border-radius:6px;
+    overflow:hidden;
+    background-color:#ffffff;
+    pointer-events: auto;
+    position:fixed;
+    top:35%;
+    left:15%;
+    z-index:10;
+    margin: 0 auto;
+    .popup-head{
+        padding:15px 10px;
+        border-bottom:1px solid #eeeeee;
+        text-align:center;
+        .popup-title{
+            margin:0;
+            padding:0;
+            font-size:15px;
+        }
+    }
+    .popup-body{
+        padding:10px;
+        overflow:auto;
+        .text-center{
+            font-size:15px;
+            padding:10px;
+            text-align:center;
+        }
+    }
+    .popup-buttoms{
+        padding:0;
+        margin:-1px;
+        min-height:45px;
+        display: flex;
+        .button{
+            flex:1;
+            font-size:15px;
+            line-height:20px;
+            border-color:#e5e5e5;
+            border-width: 1px;
+            background-color:#f8f8f8;
+            color:#2b83dd;
+            a{
+                display: block;
+                color:#2b83dd;
+            }
+        }
+    }
+}

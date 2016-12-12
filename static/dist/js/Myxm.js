@@ -1,0 +1,1 @@
+function changeBg(){var e=document.getElementById("bg"),n=Math.round(1e6*Math.random());e.style.backgroundColor="#"+n}setInterval("changeBg();",3e3);

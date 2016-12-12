@@ -1,0 +1,37 @@
+[
+    {
+        "movie_id" : "0007",
+        "movie_url": "../dist/img/0007.jpg",
+        "movie_name" : "傻儿夫妻小神郎",
+        "movie_des":"一段千年的梦境让棒棒总公司...",
+        "movie_score" : "8.5"
+    },
+    {
+        "movie_id" : "0008",
+        "movie_url": "../dist/img/0008.jpg",
+        "movie_des":"唐森（白客饰）及陪同武空...",
+        "movie_name" : "大闹天竺",
+        "movie_score" : "8.4"
+    },
+    {
+        "movie_id" : "0009",
+        "movie_url": "../dist/img/0009.jpg",
+        "movie_name" : "摆渡人",
+        "movie_des":"每座城市都有属于自己的传奇...",
+        "movie_score" : "8.5"
+    },
+    {
+        "movie_id" : "00010",
+        "movie_url": "../dist/img/0010.jpg",
+        "movie_name" : "超级幼儿园",
+        "movie_des":"影片讲述了在很久之前的...",
+        "movie_score" : "8.4"
+    },
+    {
+        "movie_id" : "00011",
+        "movie_url": "../dist/img/0011.jpg",
+        "movie_name" : "功夫瑜伽",
+        "movie_des":"考古学教授Jack（成龙...",
+        "movie_score" : "8.5"
+    }
+]

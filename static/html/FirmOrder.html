@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>确认订单</title>
+    <link rel="stylesheet" type="text/css" href="../dist/css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../dist/css/FirmOrder.css">
+    <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.js"></script>
+    <script src="http://cdn.bootcss.com/touchjs/0.2.14/touch.js"></script>
+
+</head>
+<body>
+
+    <header>
+        <a class="a_back" id="a_back"><i class="fa iconfont">&#xe60d;</i></a>
+        <h3>确认订单</h3>
+    </header>
+    <section>
+
+        <div class="m_box">
+            <div class="info">
+                <span>
+                    <i class="fa iconfont">&#xe60e;</i>
+                </span>
+                支付剩余时间
+            </div>
+            <div class="time" id="time"></div>
+        </div>
+        <!-- film-info -->
+        <div class="order_info_msg">
+            <div class="box">
+                <div class="ord-item">
+                    <div class="film_name">
+                        <span><i class="fa iconfont">&#xe617;</i></span>
+                        <span>&nbsp;你的名字</span>
+                    </div>
+                    <div class="language">日语/2D</div>
+                </div>
+                <div class="ord-mar">星美国际影城-北京回龙观店 星美生活厅</div>
+                <div class="ord-mar">2016-12-10 22:00 </div>
+                <div class="ord-mar">4排8号&nbsp;</div>
+            </div>
+        </div>
+        <!-- mobie -->
+        <div class="mobile_info">
+            <p class="tit">
+                <span><i class="fa iconfont">&#xe608;</i></span>
+                手机接收取票信息
+            </p>
+            <div class="mobile_edit">
+                <div class="mobile">
+                    <div class="inputBox"><input type="text" class="inputBox-input" id="keyword" placeholder="18210619516" maxlength="50" autocomplete="on"></div>
+                    <div class="mobile_ico">
+                        <span><i class="fa iconfont">&#xe671;</i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- mycoupon -->
+        <div class="coupon-box">
+            <div class="content">
+                <span class="tit">
+                    <i class="fa iconfont">&#xe64d;</i>
+                    <span>优惠信息</span>
+                </span>
+                <span class="use">
+                    <span class="result-msg-name">请选择使用的优惠方式</span>
+                    <i class="fa iconfont">&#xe606;</i>
+                </span>
+            </div>
+        </div>
+        <!-- 费用明细 -->
+        <div class="order_cosr_info">
+            <div class="top_item">费用明细</div>
+            <div class="item">
+                <div class="info_text">电影票</div>
+                <div class="if_batdop">
+                    <div class="lia">
+                        <div class="count_price">35.00*1    ￥35.00</div>
+                    </div>
+                    <p class="lib"> ￥35.00X1(含服务费1/张)</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="info_text">其他</div>
+                <div class="if_batdop">
+                    <div class="lia">
+                        <div class="count_price">￥0.00</div>
+                    </div>
+                    <p class="lib">  X 0套餐</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="info_text">优惠</div>
+                <div class="if_batdop">
+                    <div class="lia">
+                        <div class="count_price">-￥0.00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footer_btn">
+            <a href="pay.html"><div class="jumpBtn">
+                <span class="m_text">确认支付</span>
+                <div class="price">￥35.00</div>
+            </div></a>
+        </div>
+
+    </section>
+    <div class="disnone" id="zhezhao" style="width:100%;height:100%;background-color: #000000;opacity:0.5;position:absolute;top:0;left:0;"></div>
+    <!-- 返回 弹窗 -->
+    <div class="popup disnone" id="popup">
+        <div class="popup-head">
+            <h3 class="popup-title">温馨提示</h3>
+        </div>
+        <div class="popup-body">
+            <div class="text-center">继续返回将会取消该订单<br/>需重新选座提交</div>
+        </div>
+        <div class="popup-buttoms">
+            <button class="button"><a href="javascript:history.go(-1);location.reload()">返回</a></button>
+            <button class="button" id="button">继续下单</button>
+        </div>
+    </div>
+    <script>
+        $(function() {
+            var oAback=document.getElementById("a_back");
+            oAback.addEventListener("click", function(){
+                $("#popup").removeClass("disnone");
+                $("#zhezhao").removeClass("disnone");
+            });
+
+            var oBtn=document.getElementById("button");
+            oBtn.addEventListener("click", function(){
+                $("#popup").addClass("disnone");
+                $("#zhezhao").addClass("disnone");
+            });
+
+
+        });
+    </script>
+    <script>
+            var maxtime = 15*60;
+            var oTime=document.getElementById("time");
+            function CountDown(){
+                 if(maxtime>=0){
+                     minutes = Math.floor(maxtime/60);
+                     seconds = Math.floor(maxtime%60);
+                     msg = minutes+"分"+seconds+"秒";
+                     oTime.innerHTML=msg;
+                     --maxtime;
+                 }
+                 else{
+                     clearInterval(timer);
+                     // alert("时间到，结束!");
+                 }
+            }
+            timer = setInterval("CountDown()",1000);
+
+
+    </script>
+</body>
+</html>

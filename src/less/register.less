@@ -1,0 +1,160 @@
+@import 'public.less';
+
+
+@color:#e76a00;
+html{
+    font-size: 62.5%;
+    font-family:'微软雅黑';
+ }
+header{
+    position:fixed;
+    top:0px;
+    width:100%;
+    z-index:2;
+}
+.header{
+    display: flex;
+    font-size:1.7rem;
+    padding:10px;
+    border-bottom:1px solid #d9d9d9;
+}
+.header a{
+    color:#000;
+}
+.header-left,.header-right{
+    flex:1;
+}
+.header-left{
+    margin-left:10px;
+}
+.header-left .iconfont{
+    font-size:2rem;
+}
+.header-center{
+    font-size:1.8rem;
+     flex:4;
+     text-align:center;
+}
+.header-right{
+    text-align:center;
+}
+.header-right a{
+    color:red;
+    font-size:1.6rem;
+}
+.down{
+    font-size:1.3rem;
+}
+//section
+section{
+    margin-top:24px;
+}
+.form{
+    position:relative;
+}
+.form ul{
+    width:100%;
+    position:absolute;
+    top:0;
+    background:#fff;
+    margin-top:20px;
+    float:left;
+    font-size:1.3rem;
+    display:none;
+}
+.form .block{
+    display:block;
+}
+.form ul li{
+    width:94%;
+    padding:16px;
+    margin-left:15px;
+    border-bottom:1px solid #eee;
+    list-style:none;
+}
+.form ul li input{
+    border:none;
+    margin-left:10px;
+    outline:none;
+}
+#yzmm{
+    float:right;
+    width:88px;
+    height:31px;
+    background:#eee;
+    font-size:2rem;
+    text-align:center;
+    margin-right:38px;
+}
+.dtm{
+    position:relative;
+}
+.hyzm{
+    position:absolute;
+    top:10px;
+    right:56px;
+    display:block;
+    color:#fff;
+    font-size:1.4rem;
+    padding:7px 5px;
+    background:@color;
+    width:20%;
+    text-align: center;
+}
+.remember{
+    margin:20px 35px;
+    font-size:1.4rem;
+    color:#666;
+}
+.check{
+    width:16px;
+    height:16px;
+    border:1px solid #ccc;
+    border-radius:50%;
+    display:block;
+    float:left;
+    margin-right: 10px;
+    margin-top:3px;
+}
+.forget{
+    color:#5D9CEC;
+    font-size:1.3rem;
+    display:inline-block;
+    margin-right:20px;
+    margin-left:5px;
+}
+.btn-login{
+    width:90%;
+    background:#eee;
+    padding:10px;
+    text-align:center;
+    margin:0 auto;
+}
+.btn-login a{
+    font-size:1.8rem;
+    color:#555;
+}
+.adv{
+    color:#999;
+    font-size:1.2rem;
+    padding:10px 34px;
+}
+.fix{
+    overflow:hidden;
+    float:left;
+}
+//错误提示框
+.false{
+    display:none;
+    background:#fff;
+    border:1px solid #ccc;
+    padding:18px 13px;
+    text-align:center;
+    border-radius:2px;
+    position:fixed;
+    top:40%;
+    right:25%;
+    left:25%;
+    color:#333;
+    font-size:1.5rem;
+}

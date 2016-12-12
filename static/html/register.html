@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>会员注册</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../dist/css/iconfont.css">
+    <link rel="stylesheet" href="../dist/css/login.css">
+   <script src="../dist/js/register.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="header">
+            <div class="header-left">
+                <a href="../index.html"><i class="iconfont" style="color:#797979">&#xe666;</i></a>
+            </div>
+            <div class="header-center">
+                会员注册
+            </div>
+            <div class="header-right">
+                <a href="login.html">登录</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="clearfix">
+        <form class="form" action="#">
+            <label>手&nbsp;&nbsp;机&nbsp;&nbsp;号</label><input name="userName" type="text" placeholder="请输入手机号" required><br>
+            <label>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码</label><input name="pwd" type="password" placeholder="输入6位以上密码" required><br>
+            <label>确认密码</label><input name="confirmPwd" type="password" placeholder="确认密码" required>
+            <input class="reg" type="submit" value="注册">
+        </form>
+    </section>
+</body>
+</html>

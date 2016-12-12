@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>电影</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- <script src="../dist/js/jquery-3.1.1.js"></script> -->
+    <script src="../dist/js/zepto.js"></script>
+    <script src="../dist/js/template.js"></script>
+    <link rel="stylesheet" href="../dist/css/iconfont.css">
+    <link rel="stylesheet" href="../dist/css/movie.css">
+    <script src="../dist/js/movie.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header-left">
+                北京 <i class="iconfont down" style="color:#fff">&#xe606;</i>
+            </div>
+            <div class="header-center">
+
+            </div>
+            <div class="header-right">
+                <a href="moviehome.html">影院</a>
+            </div>
+        </div>
+
+        <div>
+            <ul class="tab">
+                <li class="mvpaly">正在热映</li>
+                <li>即将上映</li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- 正在热映内容 -->
+    <section>
+
+        <div>
+            <ul>
+                <div id="content1" class="nowing"></div>
+            </ul>
+
+            <!-- 即将上映 -->
+            <ul>
+                <div id="content2" class="future"></div>
+            </ul>
+        </div>
+
+
+    </section>
+
+
+
+
+    <!-- footer -->
+    <footer>
+        <ul class="footer-ul">
+            <li>
+                <span>
+                    <i class="fa iconfont">&#xe6ae;</i>
+                    <p class="col-white"><a href="../index.html">我的</a></p>
+                </span>
+            </li>
+            <li>
+                <span class="active">
+                    <i class="fa iconfont">&#xe804;</i>
+                    <p><a href="##">电影</a></p>
+                </span>
+            </li>
+            <li>
+                <span>
+                    <i class="fa iconfont">&#xe6d7;</i>
+                    <p><a href="search.html">发现</a></p>
+                </span>
+            </li>
+            <li>
+                <span>
+                    <i class="fa iconfont">&#xe6a9;</i>
+                    <p><a href="me.html">我的</a></p>
+                </span>
+            </li>
+        </ul>
+    </footer>
+
+    <script id="movietpl" type="text/html">
+        {{each list as value i}}
+             <li>
+
+                    <div class="img">
+                    <a href="listinfo.html?{{value['movie_id']}}">
+                    <img src="{{value['movie_url']}}" alt="" />
+                    </a>
+                </div>
+
+                <div class="movie-content">
+                    <h1>{{value['movie_name']}}</h1>
+                    <p class="des">{{value['movie_des']}}</p>
+                    <p class="iconfont grade">&#xe60c;<span class="iconfont grade"></span></p><span class="score">{{value['movie_score']}}</span>
+                </div>
+                <div class="buy">
+                    <a href="place.html?{{value['movie_id']}}">
+                        <span>购买</span>
+                    </a>
+                </div>
+
+            </li>
+        {{/each}}
+    </script>
+
+
+
+</body>
+</html>
